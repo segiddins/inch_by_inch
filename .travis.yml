@@ -1,0 +1,7 @@
+language: ruby
+cache: bundler
+branches:
+  only:
+    - master
+rvm:
+  - 2.2

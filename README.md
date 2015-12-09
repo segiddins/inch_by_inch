@@ -1,5 +1,8 @@
 # InchByInch
 
+[![Build Status](http://img.shields.io/travis/segiddins/inch_by_inch/master.svg?style=flat)](https://travis-ci.org/segiddins/inch_by_inch)
+[![Gem Version](http://img.shields.io/gem/v/inch_by_inch.svg?style=flat)](http://badge.fury.io/rb/inch_by_inch)
+
 A rake task to make validating your documentation comments as easy as running
 a single command.
 

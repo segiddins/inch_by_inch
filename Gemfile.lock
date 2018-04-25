@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    inch_by_inch (1.0.0)
+    inch_by_inch (1.0.1)
       inch (~> 0.8.0)
       rake (~> 10.0)
 

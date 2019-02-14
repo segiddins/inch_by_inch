@@ -45,7 +45,10 @@ module InchByInch
       failing_grade_list = context.grade_lists.select { |g| failing_grade_symbols.include?(g.to_sym) }
       Inch::CLI::Command::Output::List.new(options, context.objects, failing_grade_list) # just initializing will run the command
       puts
-      if context.objects.any? { |o| failing_grade_symbols.include?(o.grade.to_sym) }
+      failing_objects = context.objects.select { |o| failing_grade_symbols.include?(o.grade.to_sym) }
+      if failing_objects.any?
+        Inch::CLI::Command::Output::Show.new(options, failing_objects)
+        puts
         puts red('✗ Lint of Documentation failed: Please improve above suggestions.')
         exit 1
       else

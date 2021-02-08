@@ -4,5 +4,6 @@ source 'https://rubygems.org'
 gemspec
 
 group :development do
-  gem 'rubocop'
+  gem 'rubocop', '~> 1.8', :require => false
+  gem 'rubocop-performance', :require => false
 end

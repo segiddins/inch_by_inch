@@ -13,7 +13,7 @@ Lint/NestedMethodDefinition:
 
 # Offense count: 5
 # Configuration parameters: AllowURI, URISchemes.
-Metrics/LineLength:
+Layout/LineLength:
   Max: 129
 
 # Offense count: 1

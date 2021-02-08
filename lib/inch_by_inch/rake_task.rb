@@ -25,7 +25,7 @@ module InchByInch
     private
 
     def install_task(task_name)
-      desc 'Lint the completeness of the documentation with Inch' unless ::Rake.application.last_comment
+      desc 'Lint the completeness of the documentation with Inch' unless ::Rake.application.last_description
       task(task_name) do
         require 'inch'
         require 'inch/cli'
